@@ -8,26 +8,26 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <h1>Want to go to Mars?</h1>
   <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-<legend> Personal details</legend>
   <form class="push-0" method="POST" action="https://formspree.io/atwy0003@algonquinlive.com">
-    <header class="grid grid-middle">
+    <fieldset>
+    <legend> Personal details</legend>
+    <div class="grid">
       <div class="push logo unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-    <label for="name">Name</label>
-    <input id="name" name="name" required>
-  </div>
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+      </div>
 
-  <form class="push-0" method="POST" action="https://formspree.io/atwy0003@algonquinlive.com">
-  <div class="push logo unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-    <label for="age">Age</label>
-    <input id="age" name="age" required>
-  </div>
+      <div class="push logo unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <label for="age">Age</label>
+        <input id="age" name="age" required>
+      </div>
 
-  <form class="push-0" method="POST" action="https://formspree.io/atwy0003@algonquinlive.com">
   <div class="push logo unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
     <label for="email">Email</label>
     <input id="email" name="email" required>
@@ -43,18 +43,24 @@
     </select>
   </div>
 
-  <form class="push-0" method="POST" action="https://formspree.io/atwy0003@algonquinlive.com">
   <div class="push">
     <label for="address">Address</label>
     <input id="address" address="address" required>
   </div>
+</fieldset>
 
+<fieldset>
 <legend>Mission statement</legend>
-<form class="push-0" method="POST" action="https://formspree.io/atwy0003@algonquinlive.com">
 <div class="push">
   <label for="name">Why do you want to go to Mars?</label>
-  <input id="name" name="name" required>
+  <textarea id="name" name="name" required></textarea>
 </div>
+</fieldset>
+
 <div class="push">
-<a class=".btn">Register for the trip!</a>
+  <button type="submit" class="btn">Register for the trip!</button>
 </div>
+  <input type="hidden" name="_subject" value="Request to join the mission">
+</form>
+</body>
+</html>
